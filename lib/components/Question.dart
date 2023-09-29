@@ -26,8 +26,6 @@ class _RightQuestionsState extends State<RightQuestions> {
           });
         },
         style: ButtonStyle(
-            padding: MaterialStatePropertyAll(
-                EdgeInsets.symmetric(vertical: screenheight * 0.02)),
             shadowColor: MaterialStatePropertyAll(Colors.transparent),
             backgroundColor: MaterialStateProperty.resolveWith<Color>(
                   (Set<MaterialState> states) {
@@ -43,7 +41,7 @@ class _RightQuestionsState extends State<RightQuestions> {
           children: [
             Container(
                 margin: EdgeInsets.only(left: 5, right: 20),
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(4),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     gradient: LinearGradient(
@@ -86,8 +84,6 @@ class _QuestionState extends State<Question> {
           });
         },
         style: ButtonStyle(
-            padding: MaterialStatePropertyAll(
-                EdgeInsets.symmetric(vertical: screenheight * 0.02)),
             shadowColor: MaterialStatePropertyAll(Colors.transparent),
             backgroundColor: MaterialStateProperty.resolveWith<Color>(
                   (Set<MaterialState> states) {
@@ -103,7 +99,7 @@ class _QuestionState extends State<Question> {
           children: [
             Container(
                 margin: EdgeInsets.only(left: 5, right: 20),
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(4),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     gradient: LinearGradient(

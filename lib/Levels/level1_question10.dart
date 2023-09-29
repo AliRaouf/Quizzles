@@ -41,7 +41,7 @@ class Level1Question10 extends StatelessWidget {
                   fontSize: 15,
                 )),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
                 "What is the tallest mountain in the world?",
                 style: GoogleFonts.raleway(color: Colors.white, fontSize: 25),
@@ -49,7 +49,7 @@ class Level1Question10 extends StatelessWidget {
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(80),
-              child: Image(
+              child: Image(fit: BoxFit.fill,
                   height: screenheight * 0.3,
                   width: screenwidth,
                   image: NetworkImage(
@@ -59,7 +59,7 @@ class Level1Question10 extends StatelessWidget {
             Question(answerNumber: "02", answer: "Mount Kilimanjaro"),
             RightQuestions(answer: "Mount Everest", answerNumber: "03"),
             Question(answerNumber: "04", answer: "Mount Denali"),
-            Container(margin: EdgeInsets.only(top: screenheight*0.04),
+            Container(margin: EdgeInsets.only(top: screenheight*0.01),
               child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

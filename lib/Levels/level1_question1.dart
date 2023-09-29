@@ -40,15 +40,15 @@ class Level1Question1 extends StatelessWidget {
                   fontSize: 15,
                 )),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
                 "Which of the following is the largest ocean on Earth?",
                 style: GoogleFonts.raleway(color: Colors.white, fontSize: 25),
               ),
             ),
             ClipRRect(
-              borderRadius: BorderRadius.circular(80),
-              child: Image(
+              borderRadius: BorderRadius.circular(70),
+              child: Image(fit: BoxFit.fill,
                   height: screenheight * 0.3,
                   width: screenwidth,
                   image: NetworkImage(
@@ -58,7 +58,7 @@ class Level1Question1 extends StatelessWidget {
             Question(answerNumber: "02", answer: "Indian Ocean"),
             RightQuestions(answer: "Pacific Ocean", answerNumber: "03"),
             Question(answerNumber: "04", answer: "Arctic Ocean"),
-            Container(margin: EdgeInsets.only(top: screenheight*0.04),
+            Container(margin: EdgeInsets.only(top: screenheight*0.01),
               child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

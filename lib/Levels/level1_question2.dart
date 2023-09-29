@@ -40,15 +40,15 @@ class Level1Question2 extends StatelessWidget {
                   fontSize: 15,
                 )),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
-                "What is the name of the largest planet in the solar system?",
+                "What is largest planet in the solar system?",
                 style: GoogleFonts.raleway(color: Colors.white, fontSize: 25),
               ),
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(80),
-              child: Image(
+              child: Image(fit: BoxFit.fill,
                   height: screenheight * 0.3,
                   width: screenwidth,
                   image: NetworkImage(
@@ -58,49 +58,46 @@ class Level1Question2 extends StatelessWidget {
             RightQuestions(answer: "Saturn", answerNumber: "02"),
             Question(answerNumber: "03", answer: "Uranus"),
             Question(answerNumber: "04", answer: "Neptune"),
-            Container(margin: EdgeInsets.only(top: screenheight*0.0075),
-              child:
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => LevelsScreen()),
-                        );
-                      },
-                      style: ButtonStyle(
-                          shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                          padding: MaterialStatePropertyAll(EdgeInsets.symmetric(
-                              horizontal: screenwidth * 0.1,
-                              vertical: screenheight * 0.015)),
-                          backgroundColor:
-                          MaterialStatePropertyAll(Color(0xff6949Fe))),
-                      child: Text("Back",
-                          style: GoogleFonts.raleway(
-                              fontSize: 20, color: Colors.white))
-                  ),
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Level1Question3()),
-                        );
-                      },
-                      style: ButtonStyle(
-                          shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                          padding: MaterialStatePropertyAll(EdgeInsets.symmetric(
-                              horizontal: screenwidth * 0.1,
-                              vertical: screenheight * 0.015)),
-                          backgroundColor:
-                          MaterialStatePropertyAll(Color(0xff6949Fe))),
-                      child: Text("Next",
-                          style: GoogleFonts.raleway(
-                              fontSize: 20, color: Colors.white)))
-                ],
-              ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LevelsScreen()),
+                      );
+                    },
+                    style: ButtonStyle(
+                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                        padding: MaterialStatePropertyAll(EdgeInsets.symmetric(
+                            horizontal: screenwidth * 0.1,
+                            vertical: screenheight * 0.015)),
+                        backgroundColor:
+                        MaterialStatePropertyAll(Color(0xff6949Fe))),
+                    child: Text("Back",
+                        style: GoogleFonts.raleway(
+                            fontSize: 20, color: Colors.white))
+                ),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Level1Question3()),
+                      );
+                    },
+                    style: ButtonStyle(
+                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                        padding: MaterialStatePropertyAll(EdgeInsets.symmetric(
+                            horizontal: screenwidth * 0.1,
+                            vertical: screenheight * 0.015)),
+                        backgroundColor:
+                        MaterialStatePropertyAll(Color(0xff6949Fe))),
+                    child: Text("Next",
+                        style: GoogleFonts.raleway(
+                            fontSize: 20, color: Colors.white)))
+              ],
             )
           ],
         ),

@@ -58,9 +58,9 @@ class ResultScreen extends StatelessWidget {
                     width: screenwidth,
                     margin: EdgeInsets.only(
                         left: screenwidth * 0.05, right: screenwidth * 0.05,
-                        top: screenheight * 0.05, bottom: screenheight * 0.25),
+                        top: screenheight * 0.05, bottom: screenheight * 0.2),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
+                      borderRadius: BorderRadius.circular(50),
                       gradient: LinearGradient(
                         colors: [Color(0xff69694fd), Color(0xff32167C)],
                         begin: Alignment.topCenter,
@@ -69,28 +69,29 @@ class ResultScreen extends StatelessWidget {
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("Your Final Score is",
                             style: GoogleFonts.raleway(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
-                              fontSize: 30,
+                              fontSize: 20,
                             )),
-                        Container(
+                        Container(width: screenwidth*0.55,height: screenheight*0.3,
                             margin: EdgeInsets.only(
                                 bottom: screenheight * 0.03),
-                            padding: EdgeInsets.all(45),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(999),
                               color: Color(0xfffbb82a),
                             ),
-                            child: Text(
-                              "${values.sum}",
-                              style: GoogleFonts.lato(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                fontSize: 100,
+                            child: Center(
+                              child: Text(
+                                "${values.sum}",
+                                style: GoogleFonts.lato(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 100,
+                                ),
                               ),
                             )),
                       ],

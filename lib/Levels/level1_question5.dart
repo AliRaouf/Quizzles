@@ -40,7 +40,7 @@ class Level1Question5 extends StatelessWidget {
                   fontSize: 15,
                 )),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
                 "What is the largest desert in the world?",
                 style: GoogleFonts.raleway(color: Colors.white, fontSize: 25),
@@ -48,7 +48,7 @@ class Level1Question5 extends StatelessWidget {
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(80),
-              child: Image(
+              child: Image(fit: BoxFit.fill,
                   height: screenheight * 0.3,
                   width: screenwidth,
                   image: NetworkImage(
@@ -58,7 +58,7 @@ class Level1Question5 extends StatelessWidget {
             Question(answer: "Arabian", answerNumber: "02"),
             Question(answerNumber: "03", answer: "Gobi"),
             Question(answerNumber: "04", answer: "Arctic"),
-            Container(margin: EdgeInsets.only(top: screenheight*0.04),
+            Container(margin: EdgeInsets.only(top: screenheight*0.01),
               child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

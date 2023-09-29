@@ -40,7 +40,7 @@ class Level1Question9 extends StatelessWidget {
                   fontSize: 15,
                 )),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: EdgeInsets.only(top: 10, bottom: 10),
               child: Text(
                 "Who was the first person to walk on the moon?",
                 style: GoogleFonts.raleway(color: Colors.white, fontSize: 25),
@@ -48,7 +48,7 @@ class Level1Question9 extends StatelessWidget {
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(80),
-              child: Image(
+              child: Image(fit: BoxFit.fill,
                   height: screenheight * 0.3,
                   width: screenwidth,
                   image: NetworkImage(
@@ -58,7 +58,7 @@ class Level1Question9 extends StatelessWidget {
             Question(answerNumber: "02", answer: "Buzz Aldrin"),
             Question(answer: "Michael Collins", answerNumber: "03"),
             Question(answerNumber: "04", answer: "Yuri Gagarin"),
-            Container(margin: EdgeInsets.only(top: screenheight*0.04),
+            Container(margin: EdgeInsets.only(top: screenheight*0.01),
               child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
